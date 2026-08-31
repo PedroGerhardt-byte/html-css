@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* seletores personalisados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color:grey;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited{
+            color: darkviolet;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: darkturquoise;
+        }
+
+        a::before{
+            content: ' 🔗';
+            text-decoration: none;
+            color: darkgray;
+            }
+
+        .especial::after{
+            content: ' 🔥';
+        }   
+
+        .especial{
+            background-color: darkslateblue;
+        } 
+                        
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/pedro_gerhardt/" target="_blank" >Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@pedro_gerhardt" target="_blank" class="especial">Tiktok</a></li>
+        <li><a href="https://www.youtube.com/@pedroaugusto7637" target="_blank">Youtube</a></li>
+    </ul>
+</body>
+</html>
